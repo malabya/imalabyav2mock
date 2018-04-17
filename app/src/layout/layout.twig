@@ -1,0 +1,19 @@
+{% block html_head_container %}
+
+  {% include '../partials/html-header.twig' %}
+  
+  {% block head %}
+  {% endblock %}
+  </head>
+{% endblock %}
+  <body>
+    
+    {% block page %}{% endblock %}
+    
+    {% block footer %}
+      <footer>
+        {% include '../partials/footer.twig' %}
+      </footer>
+    {% endblock %}
+  </body>
+</html>
