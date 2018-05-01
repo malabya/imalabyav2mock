@@ -1,9 +1,9 @@
-// bower:scss
-@import "bower_components/foundation-sites/scss/foundation.scss";
-// endbower
 
-@import 'partials/settings';
-@import 'partials/foundation';
-
-@include foundation-everything;
-
+@import "vendor/typecsset";
+@import "settings/settings";
+@import "base/base";
+@import "helpers/helpers";
+@import "modules/modules";
+@import "layout/layout";
+@import "components/components";
+@import "pages/pages";

@@ -1,0 +1,197 @@
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+// Reset Class
+.reset {
+  @include reset;
+}
+
+// Zero Padding
+.zero-padd-top {
+  padding-top: 0 !important;
+}
+
+.zero-padd-bottom {
+  padding-bottom: 0 !important;
+}
+
+.zero-padd-left {
+  padding-left: 0 !important;
+}
+
+.zero-padd-right {
+  padding-right: 0 !important;
+}
+
+// Zero Margin
+.zero-margin-top {
+  margin-top: 0 !important;
+}
+
+.zero-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.zero-margin-left {
+  margin-left: 0 !important;
+}
+
+.zero-margin-right {
+  margin-right: 0 !important;
+}
+
+// Margin classes.
+.mxy-1 {
+  margin: 1rem;
+}
+
+.mxy-2 {
+  margin: 2rem;
+}
+
+.mxy-3 {
+  margin: 3rem;
+}
+
+.mxy-4 {
+  margin: 4rem;
+}
+
+.mxy-5 {
+  margin: 5rem;
+}
+
+.my-1 {
+  margin: 1rem 0 1rem 0;
+}
+
+.my-2 {
+  margin: 2rem 0 2rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0 3rem 0;
+}
+
+.my-4 {
+  margin: 4rem 0 4rem 0;
+}
+
+.my-5 {
+  margin: 5rem 0 5rem 0;
+}
+
+.mx-1 {
+  margin: 0 1rem 0 1rem;
+}
+
+.mx-2 {
+  margin: 0 2rem 0 2rem;
+}
+
+.mx-3 {
+  margin: 0 3rem 0 3rem;
+}
+
+.mx-4 {
+  margin: 0 4rem 0 4rem;
+}
+
+.mx-5 {
+  margin: 0 5rem 0 5rem;
+}
+
+// Padding classes
+.padxy-1 {
+  padding: 1rem;
+}
+
+.padxy-2 {
+  padding: 2rem;
+}
+
+.padxy-3 {
+  padding: 3rem;
+}
+
+.padxy-4 {
+  padding: 4rem;
+}
+
+.padxy-5 {
+  padding: 5rem;
+}
+
+.paddy-1 {
+  padding: 1rem 0 1rem 0;
+}
+
+.paddy-2 {
+  padding: 2rem 0 2rem 0;
+}
+
+.paddy-3 {
+  padding: 3rem 0 3rem 0;
+}
+
+.paddy-4 {
+  padding: 4rem 0 4rem 0;
+}
+
+.paddy-5 {
+  padding: 5rem 0 5rem 0;
+}
+
+.paddx-1 {
+  padding: 0 1rem 0 1rem;
+}
+
+.paddx-2 {
+  padding: 0 2rem 0 2rem;
+}
+
+.paddx-3 {
+  padding: 0 3rem 0 3rem;
+}
+
+.paddx-4 {
+  padding: 0 4rem 0 4rem;
+}
+
+.paddx-5 {
+  padding: 0 5rem 0 5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.muted {
+  color: $grey;
+}
+
+.lead {
+  font-size: 115%;
+}
+
+.small {
+  font-size: 75%;
+}
+
+.hide-for-small {
+  @media screen and ($bp-larger-than-phablet) {
+    display: inherit;
+  }
+  display: none;
+}
+
+.hide-for-large {
+  @media screen and ($bp-larger-than-tablet) {
+    display: inherit;
+  }
+  @media screen and ($bp-larger-than-desktop) {
+    display: none;
+  }
+  display: inherit;
+}

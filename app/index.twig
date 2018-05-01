@@ -1,13 +1,18 @@
 {# index.twig #}
 {% extends "src/layout/layout.twig" %}
-{% set pageName = 'Homepage'%}
+{% set pageName = 'Homepage' %}
 
 
 {% block page %}
-    <header>
-        <h1>Web Generator, Gulp and Twig.js</h1>
-    </header>
-    <p>
-        The copy will have a working implementation of Yeoman Web Generator, Gulp & Twig.js with BrowserSync integrated.
-    </p>
+  <section class="index--banner">
+    <div class="index--banner-content">
+      <h1 class="index--banner-content-heading">Hey! I'm <span>Malabya</span></h1>
+      <span class="index--banner-pointers">Drupal Developer</span>
+      <span class="index--banner-pointers">Open Source Evangelist</span>
+      <span class="index--banner-pointers">Professional Trainer</span>
+      <span class="index--banner-pointers">Occasional Blogger</span>
+      <span class="index--banner-pointers">Speaker</span>
+      <span class="index--banner-pointers">Technical Architect @ Valuebound</span>
+    </div>
+  </section>
 {% endblock %}

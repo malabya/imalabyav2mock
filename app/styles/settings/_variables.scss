@@ -1,0 +1,25 @@
+/* ==========================================================================
+   Variable settings.
+   ========================================================================== */
+
+// Font settings.
+$body-sans: 'Lato', sans-serif;
+$body-serif: 'Alegreya', serif;
+$title: 'Montserrat', sans-serif;
+$post-body: 'Andada', serif;
+
+// Font weights.
+$light: 300;
+$normal: 400;
+$bold: 700;
+$heavy: 900;
+
+// Breakpoints
+$bp-smaller-than-mobile: "max-width: 25rem" !default;
+$bp-smaller-than-phablet: "max-width: 35rem" !default;
+$bp-smaller-than-tablet: "max-width: 48rem" !default;
+$bp-smaller-than-desktop: "max-width: 75rem" !default;
+$bp-larger-than-mobile: "min-width: 25rem" !default;
+$bp-larger-than-phablet: "min-width: 35rem" !default;
+$bp-larger-than-tablet: "min-width: 48rem" !default;
+$bp-larger-than-desktop: "min-width: 75rem" !default;

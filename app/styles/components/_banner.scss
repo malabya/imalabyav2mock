@@ -1,0 +1,46 @@
+.index--banner {
+  position: relative;
+  height: 100vh;
+  background: url('../assets/images/banner.jpeg') no-repeat center center;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  align-items: center;
+  .index--banner-content {
+    @include layout-container();
+    z-index: 1;
+    @media screen and ($bp-larger-than-desktop){
+      max-width: 50rem;
+      margin-left: 8.5%;
+    }
+    .index--banner-content-heading {
+      font-size: 5rem;
+      font-weight: 300;
+      color: $white;
+      span {
+        font-weight: $heavy;
+      }
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    opacity: .7;
+    z-index: auto;
+  }
+  .index--banner-pointers {
+    display: inline-flex;
+    margin: 0 .75rem 1rem 0;
+    padding-right: .75rem;
+    border-right: 1px solid;
+    border-color: transparentize($white, .5);
+    &:last-child {
+      border: none;
+    }
+  }
+}

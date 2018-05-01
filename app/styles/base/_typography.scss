@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css?
+family=Alegreya:400,400i,500,500i,700,700i|
+Andada|Lato:400,700,900|
+Montserrat:300,400,700,900');
+
+body {
+  font-family: $body-sans;
+  font-weight: $normal;
+  font-size: 112.5%;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $title;
+  font-weight: $bold;
+  color: $black;
+  letter-spacing: normal;
+}
+
+h1 {
+  @include typecsset-font-size(28px, false);
+  @media screen and ($bp-larger-than-tablet) {
+    @include typecsset-font-size(32px);
+  }
+}
+
+h2 {
+  @include typecsset-font-size(20px, false);
+  @media screen and ($bp-larger-than-tablet) {
+    @include typecsset-font-size(22px);
+  }
+}
+
+h3 {
+  @include typecsset-font-size(16px, false);
+  @media screen and ($bp-larger-than-tablet) {
+    @include typecsset-font-size(18px);
+  }
+}
+
+h4 {
+  @include typecsset-font-size(15px);
+}
+
+h5 {
+  @include typecsset-font-size(14px);
+  line-height: 1.2;
+}
+
+h6 {
+  @include typecsset-font-size(12px);
+}
+
+p.lead {
+  @include typecsset-space(margin-bottom);
+}
+
+.content ul {
+  @include unordered;
+}
+
+.content ol {
+  @include ordered;
+}
+
+strong, b {
+  font-weight: $bold;
+}
+
+em, i, q {
+  font-style: italic;
+}
+
+blockquote {
+  @include typecsset-font-size(20px);
+}
+
+hr {
+  background: none;
+  height: 1px;
+  border: 1px solid $light-grey;
+  @include typecsset-space(margin-bottom);
+}
+
+blockquote {
+  font-style: italic;
+  margin: 1.5rem 0;
+  padding: 0.5rem 1rem;
+  color: $light;
+  &:before {
+    content: "\201C";
+    @include typecsset-font-size(36px);
+    margin-right: 0.2rem;
+    vertical-align: -0.4rem;
+  }
+  &:after {
+    content: "\201D";
+    @include typecsset-font-size(36px);
+    vertical-align: -0.45em;
+  }
+  p {
+    padding: 0 0 0 1rem;
+    margin-bottom: .5rem;
+    @include typecsset-font-size(24px);
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:before, &:after {
+      content: '';
+    }
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $secondary;
+  @include transition(.2s, color, ease-in-out);
+  &:hover, &:focus {
+    color: $primary;
+  }
+}
+
+figcaption {
+  @include typecsset-font-size(10px);
+  line-height: 1.4;
+}
+
+.muted {
+  color: $grey;
+  a {
+    color: $grey;
+  }
+}
+
+.small {
+  font-size: 85%;
+  line-height: 1.2;
+}
