@@ -1,0 +1,33 @@
+@keyframes slideleft {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    @include translate(-10rem, 0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    @include translate(0, 0);
+  }
+}
+
+@keyframes slideright {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    @include translate(10rem, 0);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    @include translate(0, 0);
+  }
+}
+
+.slideleft {
+  @include animate('slideleft', 1s);
+}
+
+.slideright {
+  @include animate('slideright', 1s);
+}

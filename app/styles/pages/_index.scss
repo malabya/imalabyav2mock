@@ -1,0 +1,105 @@
+.index--banner {
+  position: relative;
+  height: 100vh;
+  background: url('../assets/images/banner.jpeg') no-repeat center center;
+  background-size: cover;
+  color: $white;
+  display: flex;
+  align-items: center;
+  .index--banner-content {
+    @include layout-container();
+    z-index: 1;
+    @media screen and ($bp-larger-than-desktop) {
+      max-width: 50rem;
+      margin-left: 8.5%;
+    }
+    .index--banner-content-heading {
+      font-size: 5rem;
+      font-weight: 300;
+      color: $white;
+      span {
+        font-weight: $heavy;
+      }
+    }
+  }
+  &:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: $black;
+    opacity: .7;
+    z-index: auto;
+  }
+  .index--banner-pointers {
+    display: inline-flex;
+    margin: 0 .75rem 1rem 0;
+    padding-right: .75rem;
+    border-right: 1px solid;
+    border-color: transparentize($white, .5);
+    &:last-child {
+      border: none;
+    }
+  }
+}
+
+.index--about {
+  position: relative;
+  padding: 8rem 0;
+  margin-bottom: 8rem;
+  background: url('../assets/images/overlay.png') repeat center;
+  background-size: contain;
+  .index--about-content {
+    @include layout-container();
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    .index--about--left-content, .index--about--right-content {
+      flex: 0 0 50%;
+      padding: 1.8rem;
+    }
+  }
+}
+
+.index--exp {
+  background: $whisper;
+  padding: 8rem 0;
+  position: relative;
+  margin-bottom: 8rem;
+  .index--exp-content {
+    @include layout-container();
+    .index--exp-item {
+      max-width: 50rem;
+      padding: 2rem;
+      background: $white;
+      box-shadow: -1px 3px 30px rgba(0, 0, 0, 0.08);
+      margin-bottom: 3rem;
+      position: relative;
+      &:after {
+        position: absolute;
+        content: "";
+        height: 3rem;
+        border-right: 2px dashed transparentize($black, .90);
+        top: 100%;
+        left: 1.5rem;
+      }
+      &:last-child{
+        &:after {
+          border: none;
+        }
+      }
+      h4 {
+        color: $primary;
+        font-size: 80%;
+        text-transform: uppercase;
+      }
+      p {
+        color: $grey;
+        @include typecsset-font-size(14px);
+      }
+    }
+  }
+}

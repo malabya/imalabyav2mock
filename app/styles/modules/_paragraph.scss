@@ -1,0 +1,4 @@
+p {
+  font-family: $post-body;
+  @include typecsset-font-size(18px);
+}

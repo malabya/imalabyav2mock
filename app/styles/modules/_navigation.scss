@@ -1,0 +1,20 @@
+.menu {
+  position: relative;
+  overflow: hidden;
+  .site--menu {
+    @include no-bullet();
+    display: flex;
+    flex-flow: row nowrap;
+    .site--menu-item {
+      padding: .875rem 1.5rem;
+      border: none;
+    }
+    .site--menu-item-link {
+      color: $white;
+      font-family: $body-serif;
+      font-weight: $bold;
+      font-size: 1.45rem;
+      @include link();
+    }
+  }
+}
