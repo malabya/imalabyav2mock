@@ -1,7 +1,5 @@
-$(document).foundation();
 
 (function ($) {
-
     /**
      * Copyright 2012, Digital Fusion
      * Licensed under the MIT license.
