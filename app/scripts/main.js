@@ -23,7 +23,6 @@ $(document).foundation();
             _bottom = _top + $t.height(),
             compareTop = partial === true ? _bottom : _top,
             compareBottom = partial === true ? _top : _bottom;
-        console.log(viewTop);
         return ((compareBottom <= viewBottom) && (compareTop >= viewTop));
 
     };
@@ -32,10 +31,10 @@ $(document).foundation();
     $(window).scroll(function (event) {
 
         $('.animation-block').each(function (i, el) {
-            let el = $(el);
-            if (el.visible(true)) {
-                el.removeClass('not-loaded');
-                el.addClass('loaded');
+            let element = $(el);
+            if (element.visible(true)) {
+                element.removeClass('not-loaded');
+                element.addClass('loaded');
             }
         });
 
