@@ -1,33 +1,21 @@
-@keyframes slideleft {
+@keyframes loaded {
   from {
+    transform: translateY(-4rem);
     opacity: 0;
     visibility: hidden;
-    @include translate(-10rem, 0);
   }
   to {
+    transform: translateY(0);
     opacity: 1;
     visibility: visible;
-    @include translate(0, 0);
   }
 }
 
-@keyframes slideright {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    @include translate(10rem, 0);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    @include translate(0, 0);
-  }
+.not-loaded {
+  opacity: 0;
+  visibility: hidden;
 }
 
-.slideleft {
-  @include animate('slideleft', 1s);
-}
-
-.slideright {
-  @include animate('slideright', 1s);
+.loaded {
+  @include animate('loaded', 1s);
 }

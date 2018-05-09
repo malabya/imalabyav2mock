@@ -86,7 +86,7 @@
         top: 100%;
         left: 1.5rem;
       }
-      &:last-child{
+      &:last-child {
         &:after {
           border: none;
         }
@@ -99,6 +99,89 @@
       p {
         color: $grey;
         @include typecsset-font-size(14px);
+      }
+    }
+  }
+}
+
+.index--blog {
+  background: $white;
+  position: relative;
+  margin-bottom: 8rem;
+  .index--blog-content {
+    @include layout-container();
+    .index--blog-content-grid {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: space-between;
+      align-items: flex-start;
+      .index--blog-item {
+        flex: 0 0 30%;
+        position: relative;
+        overflow: visible;
+        min-height: 15rem;
+        padding: 1rem;
+        margin-bottom: 3.5rem;
+        @include box();
+        .ribbon {
+          position: absolute;
+          right: -5px;
+          top: -6px;
+          height: 5rem;
+          width: 5rem;
+          overflow: hidden;
+          span {
+            font-size: 75%;
+            font-weight: bold;
+            color: #fff;
+            text-align: center;
+            line-height: 20px;
+            -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+            -webkit-transform: rotate(45deg);
+            width: 100px;
+            display: block;
+            background: $primary;
+            position: absolute;
+            top: 19px;
+            right: -21px;
+            &:before {
+              content: "";
+              position: absolute;
+              left: 0;
+              top: 100%;
+              z-index: -1;
+              border-left: 3px solid $dark-grey;
+              border-right: 3px solid transparent;
+              border-bottom: 3px solid transparent;
+              border-top: 3px solid $dark-grey;
+            }
+            &:after {
+              content: "";
+              position: absolute;
+              right: 0;
+              top: 100%;
+              z-index: -1;
+              border-left: 3px solid transparent;
+              border-right: 3px solid $dark-grey;
+              border-bottom: 3px solid transparent;
+              border-top: 3px solid $dark-grey;
+            }
+          }
+        }
+        .index--blog-item-body {
+          span {
+            font-size: .875rem;
+            font-family: $body-serif;
+            display: block;
+            margin-bottom: .5rem;
+            color: $tertiary;
+          }
+          h3 {
+            color: $primary;
+          }
+
+        }
       }
     }
   }
